@@ -19,17 +19,10 @@ namespace LearnSomething
                 new Text(Convert.ToInt32(temp[0]), temp[1], temp[2]); 
             }
 
-            //Text.Print();
-
-            //Text.PrintRandomTitle();
-
-            //Text.PrintRandomInfo();
-            //Text.PrintRandomInfo2();
-
-            //Text.PrintAllOptions();
+           
 
             Text.PrintOptions();
-            Text.UserGuess();
+          
 
 
         }
