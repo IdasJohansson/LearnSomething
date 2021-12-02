@@ -98,7 +98,7 @@ namespace LearnSomething
             // Styr vilket case som ska visas i switch-satsen samt skickar vidare samma siffra till UserGuess
             Random secondRnd = new Random();
             int unKnown = secondRnd.Next(1, 4);
-            
+
 
             Console.Write("\nVad menas med: ");
             PrintRandomTitle(nr);
@@ -154,41 +154,45 @@ namespace LearnSomething
 
             // Gör så att man kommer vidare till UserGuess tillsammans med vilken siffra som är rätt alternativ i switchsatserna. 
             UserGuess(unKnown);
-  
+
         }
 
-        
+
         // Användarens gissning, int unKnown skickas med från PrintOptions och kallas här för correctAnswer
         public static void UserGuess(int correctAnswer)
         {
             Console.WriteLine("\nVilket är det rätta alternativet?");
 
-            int userGuess = Convert.ToInt32(Console.ReadLine());
-            bool run = true; 
+            bool run = true;
 
             while (run)
             {
-                if (userGuess == correctAnswer)
+                try
                 {
-                    Console.WriteLine("Rätt svar!");
-                    Console.WriteLine("Tryck på en tanget för nästa fråga...");
-                    run = false;
-                    Console.ReadKey();
-                    Console.Clear();
-                    PrintOptions(); 
+                    int userGuess = Convert.ToInt32(Console.ReadLine());
+
+                    if (userGuess == correctAnswer)
+                    {
+                        Console.WriteLine("Rätt svar!");
+                        Console.WriteLine("Tryck på en tanget för nästa fråga...");
+                        run = false;
+                        Console.ReadKey();
+                        Console.Clear();
+                        PrintOptions();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Tyvärr det var fel :( Gissa igen: ");
+                        userGuess = Convert.ToInt32(Console.ReadLine());
+                    }
                 }
-                else
+                catch (Exception)
                 {
-                    Console.WriteLine("Tyvärr det var fel :( Gissa igen: ");
-                    userGuess = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Du kan bara använda siffror!");
+                    Console.WriteLine("Försök igen: ");
                 }
             }
-            
+
         }
-       
-
-     
-        
     }
-
 }
