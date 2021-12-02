@@ -22,7 +22,7 @@ namespace LearnSomething
             infoList.Add(this);
         }
 
-        // För att skriva ut samtliga objekt i arrayen om man vill se alla frågor och svar
+        // För att skriva ut samtliga objekt i arrayen om man vill se alla frågor och svar, använder ej bara för test. 
         public static void Print()
         {
             foreach (var item in infoList)
@@ -32,18 +32,8 @@ namespace LearnSomething
             }
         }
 
-        // RandomTitle and PrintCorrectInfo ändras inte.. för att koden inte körs igen i static.
-        // Behöver det ligga i samma metod?
-        // Pusha upp till git, gör en ny bransch och prova? 
-        // Gör random i en metod och gör två olika if satser med metoder som skriver ut olika saker....?
-        // Gör en counter som räknar poäng vid varje rätt svar. 
-
-        // Random generator för PrintRandomTitel och CorrectInfo
-        static Random rnd = new Random();
-        static int count = rnd.Next(1, 23); // Antal rader i cvs filen
-
-        // Använder static Random rnd och count
-        public static void PrintRandomTitle()
+        // Detta är metoden för ämnet/frågan, count skickas med i PrintOptionsMetoden för att siffran ska vara samma som i PrintCorrectInfo
+        public static void PrintRandomTitle(int count)
         {
             foreach (var item in infoList)
             {
@@ -51,13 +41,12 @@ namespace LearnSomething
                 if (count == item._num)
                 {
                     Console.WriteLine(item._title);
-
                 }
             }
         }
 
-        // Använder static Random rnd och count
-        public static void PrintCorrectInfo()
+        // Detta är metoden för rätt svar på ämnet/frågan, count skickas med i PrintOptionsMetoden för att siffran ska vara samma som i PrintRandomTitle
+        public static void PrintCorrectInfo(int count)
         {
             foreach (var item in infoList)
             {
@@ -69,7 +58,7 @@ namespace LearnSomething
             }
         }
 
-
+        // Slumpar ett svar
         public static void PrintRandomInfo()
         {
             Random rnd = new Random();
@@ -84,6 +73,7 @@ namespace LearnSomething
             }
         }
 
+        // Slumpar ett svar
         public static void PrintRandomInfo2()
         {
             Random rnd = new Random();
@@ -98,31 +88,27 @@ namespace LearnSomething
             }
         }
 
-        // Skriver ut titeln och alla alternativen, använder ej, bara för test. 
-        public static void PrintAllOptions()
-        {
-            PrintRandomTitle();
-            PrintCorrectInfo();
-            PrintRandomInfo();
-            PrintRandomInfo2();
-        }
-
-
-        static Random secondRnd = new Random();
-        static int unKnown = secondRnd.Next(1, 4); // Int unKnow styr vilket case som skrivs ut
 
         public static void PrintOptions()
         {
+            // Styr PrintRandomTitle och PrintCorrectInfo
+            Random rnd = new Random();
+            int nr = rnd.Next(1, 23);
+
+            // Styr vilket case som ska visas i switch-satsen samt skickar vidare samma siffra till UserGuess
+            Random secondRnd = new Random();
+            int unKnown = secondRnd.Next(1, 4);
             
+
             Console.Write("\nVad menas med: ");
-            PrintRandomTitle();
+            PrintRandomTitle(nr);
 
             // Tre switch-satser med Correct info på olika platser innebär att correct info hamnar på olika ställen varje gång.
             Console.WriteLine("\nAlternativ 1:");
             switch (unKnown)
             {
                 case 1:
-                    PrintCorrectInfo();
+                    PrintCorrectInfo(nr);
                     break;
                 case 2:
                     PrintRandomInfo();
@@ -141,7 +127,7 @@ namespace LearnSomething
                     PrintRandomInfo2();
                     break;
                 case 2:
-                    PrintCorrectInfo();
+                    PrintCorrectInfo(nr);
                     break;
                 case 3:
                     PrintRandomInfo();
@@ -160,18 +146,20 @@ namespace LearnSomething
                     PrintRandomInfo2();
                     break;
                 case 3:
-                    PrintCorrectInfo();
+                    PrintCorrectInfo(nr);
                     break;
                 default:
                     break;
             }
 
-            //UserGuess(); 
-
+            // Gör så att man kommer vidare till UserGuess tillsammans med vilken siffra som är rätt alternativ i switchsatserna. 
+            UserGuess(unKnown);
+  
         }
 
-        // Användarens gissning
-        public static void UserGuess()
+        
+        // Användarens gissning, int unKnown skickas med från PrintOptions och kallas här för correctAnswer
+        public static void UserGuess(int correctAnswer)
         {
             Console.WriteLine("\nVilket är det rätta alternativet?");
 
@@ -180,13 +168,13 @@ namespace LearnSomething
 
             while (run)
             {
-                if (userGuess == unKnown)
+                if (userGuess == correctAnswer)
                 {
                     Console.WriteLine("Rätt svar!");
                     Console.WriteLine("Tryck på en tanget för nästa fråga...");
                     run = false;
                     Console.ReadKey();
-                    Console.Clear(); 
+                    Console.Clear();
                     PrintOptions(); 
                 }
                 else
@@ -197,7 +185,10 @@ namespace LearnSomething
             }
             
         }
+       
 
+     
+        
     }
 
 }
