@@ -1,0 +1,22 @@
+﻿1;Data ;Data är information eller fakta utan kontext som oftast är ostrukturerad och ej bearbetad. När vi pratar om data så är det alltså detta steget vi pratar om dvs ostrukturerad och ej bearbetad information som utan kontex i princip inte säger oss någonting. För att kunna använda datan så måste vi organisera den, strukturera den och sätta in den i ett sammanhang.
+2;Information;När man bearbetat datan så får den ett syfte eller en mening. Den blir då begriplig för oss som information. Information är alltså data som har fått syfte och mening vilket gör att den kan tolkas och användas på korrekt sätt.
+3;Kunskap;Kunskap är relationen mellan data och information. Kan man förstå vad faktan betyder kan man också bilda sig en uppfattning om den. Detta gör att man kan fatta beslut och göra förutsägelser baserat på kunskapen vilket leder till visdom.
+4;Visdom ;I takt med att datan behandlas och struktureras så ökar även förståelsen för innehållet vilket leder till visom.
+5;Lågnivåspråk;Ett lågnivåspråk handlar om HUR, hur en process går till. Det är en detaljerad kod som ligger nära det språk som datorn pratar.
+6;Högnivåspråk;Ett högnivåspråk berättar VAD vi ska göra inte på vilket sätt (HUR). Till detta används en kompilator som konverterar språket till lågnivå.
+7;Assembler;Assembler eller assemblyspråk är ett sätt att uttrycka maskinkoden för en dators processor på ett sätt som lämpar sig för människor att läsa och skriva. Programmet som översätter assembler till numerisk maskinkod kallas en assemblator.
+8;Maskinkod;Maskinkod är ett maskinspråk som är binärt med ettor och nollor. Det är begränsat med instruktioner och hårt knutet till en processor.
+9;Hårdvara;Hårdvara i en dator är alla de saker som man kan ta på, till exempel grafikkort, cd-spelare och i förlängningen även sladdar. Motsatsen kallas programvara eller mjukvara och det är alla de program som används i datorn.
+10;Kompilator;En kompilator är en slags översättare. Det är ett programspråk som utifrån en programtext skrivet i ett programspråk i tex C skapar ett motsvarande lågnivåsprogram som är kapabelt att utföra de aktiviteter som programtexten beskriver. En komiplator levererar ofta en maskinkod.
+11;Källkod;"Källkod är ett programspråk som är begripligt för människor. Men för att en maskin ska kunna använda det behöver det översättas med en kompilator.Källkoden är det språket vi ser och förstår. "
+12;Exekvering;Exekveringn innbär körning av ett datorprogram
+13;Scriptspråk;Ett skriptspråk kompileras inte utan tolkas i en speciell miljö.  PHP, JavaScript och Ruby
+14;Användargränssnitt;Syftar oftast på det grafiska, hur vi integrerar och styr. Det som en användare styr och interagerar mer i ett program kallas för gränssnitt. Det kan ofta vara det grafiska med knappar och fönster eller textbaserade. Men gränssnitt är alla verktyg som agerar som en länk mellan användare och dator alltså även tangentbort,  mus och högtalare. 
+15;Frontend;"Frontend är det visuella i ett program, det som visas upp för en användare. Text, knappar, bilder, formulär m. Exempel på språk är: HTML, CSS, JavaScript"
+16;Backend;"Backend är allt i bakgrunden, den logiska delen i ett program. Man kan säga att det är programmets hjärna.Exempel på språk är: C#, Java, Python"
+17;HTML;Hyper-text, markup language (Frotend)
+18;CSS;Cascading style sheet (Frontend) 
+19;JavaScript;Frontendspråk
+20;Java;Backendspråk
+21;C#;Backendspråk
+22;Python;Backendspråk
