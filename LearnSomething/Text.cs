@@ -8,12 +8,12 @@ namespace LearnSomething
         // static lista som går via klassen inte objektet
         private static List<Text> infoList = new List<Text>();
 
-        //fileds
+        //Fields
         private int _num;
         private string _title;
         private string _info;
 
-        // konstruktorn som adderar alla objekt som skapas i listan. 
+        // Konstruktorn som adderar alla objekt som skapas i listan. 
         public Text(int num, string title, string info)
         {
             this._num = num;

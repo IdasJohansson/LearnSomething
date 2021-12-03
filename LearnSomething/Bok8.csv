@@ -10,7 +10,7 @@
 10;Kompilator;En kompilator är en slags översättare. Det är ett programspråk som utifrån en programtext skrivet i ett programspråk i tex C skapar ett motsvarande lågnivåsprogram som är kapabelt att utföra de aktiviteter som programtexten beskriver. En komiplator levererar ofta en maskinkod.
 11;Källkod;"Källkod är ett programspråk som är begripligt för människor. Men för att en maskin ska kunna använda det behöver det översättas med en kompilator.Källkoden är det språket vi ser och förstår. "
 12;Exekvering;Exekveringn innbär körning av ett datorprogram
-13;Scriptspråk;Ett skriptspråk kompileras inte utan tolkas i en speciell miljö.  PHP, JavaScript och Ruby
+13;Scriptspråk;Ett skriptspråk kompileras inte utan tolkas i en speciell miljö. PHP, JavaScript och Ruby
 14;Användargränssnitt;Syftar oftast på det grafiska, hur vi integrerar och styr. Det som en användare styr och interagerar mer i ett program kallas för gränssnitt. Det kan ofta vara det grafiska med knappar och fönster eller textbaserade. Men gränssnitt är alla verktyg som agerar som en länk mellan användare och dator alltså även tangentbort,  mus och högtalare. 
 15;Frontend;"Frontend är det visuella i ett program, det som visas upp för en användare. Text, knappar, bilder, formulär m. Exempel på språk är: HTML, CSS, JavaScript"
 16;Backend;"Backend är allt i bakgrunden, den logiska delen i ett program. Man kan säga att det är programmets hjärna.Exempel på språk är: C#, Java, Python"
