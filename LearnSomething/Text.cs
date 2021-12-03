@@ -62,7 +62,7 @@ namespace LearnSomething
         public static void PrintRandomInfo()
         {
             Random rnd = new Random();
-            int count = rnd.Next(1, 23);
+            int count = rnd.Next(1, infoList.Count + 1); // infoList.Count tar in längden på listan + 1 för att man ska få med även det sista objektet i listan. 
 
             foreach (var item in infoList)
             {
@@ -77,7 +77,7 @@ namespace LearnSomething
         public static void PrintRandomInfo2()
         {
             Random rnd = new Random();
-            int count = rnd.Next(1, 23);
+            int count = rnd.Next(1, infoList.Count + 1); ;
 
             foreach (var item in infoList)
             {
@@ -93,7 +93,7 @@ namespace LearnSomething
         {
             // Styr PrintRandomTitle och PrintCorrectInfo
             Random rnd = new Random();
-            int nr = rnd.Next(1, 23);
+            int nr = rnd.Next(1, infoList.Count + 1);
 
             // Styr vilket case som ska visas i switch-satsen samt skickar vidare samma siffra till UserGuess
             Random secondRnd = new Random();
