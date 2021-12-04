@@ -8,7 +8,7 @@ namespace LearnSomething
         static void Main(string[] args)
         {
             // Tar i hela csv-filen objektorientering i en array
-            string[] textFile = File.ReadAllLines(@"/Users/ida/Projects/LearnSomething/LearnSomething/Objektorientering.csv");
+            string[] textFile = File.ReadAllLines(@"/Users/ida/Projects/LearnSomething/LearnSomething/Objektorientering/Objektorientering.csv");
 
             // För att skapa objekt av varje rad i csv-filen
             foreach (var item in textFile)
@@ -20,7 +20,7 @@ namespace LearnSomething
             }
 
             // Tar i hela csv-filen systemutveckling i en array
-            string[] textfile2 = File.ReadAllLines(@"/Users/ida/Projects/LearnSomething/LearnSomething/Systemutveckling.csv");
+            string[] textfile2 = File.ReadAllLines(@"/Users/ida/Projects/LearnSomething/LearnSomething/Systemutveckling/Systemutveckling.csv");
 
             foreach (var item in textfile2)
             {
@@ -29,12 +29,8 @@ namespace LearnSomething
                 new SecondSubject(Convert.ToInt32(temp[0]), temp[1], temp[2]); 
             }
 
-
-            // Startar programmet
-            //FirstSubjekt.PrintOptions();
-
-            SecondSubject.PrintOptions(); 
-
+            // Öppnar menyn. 
+            Menu.MenuMethod(); 
 
 
 

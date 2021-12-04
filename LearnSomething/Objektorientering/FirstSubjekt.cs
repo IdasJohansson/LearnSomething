@@ -178,8 +178,10 @@ namespace LearnSomething
 
                     if (userGuess == correctAnswer)
                     {
+                        Console.ForegroundColor = ConsoleColor.DarkGreen;
                         Console.WriteLine("Rätt svar!");
                         Console.WriteLine("Tryck på en tanget för nästa fråga...");
+                        Console.ResetColor(); 
                         run = false;
                         Console.ReadKey();
                         Console.Clear();
@@ -189,15 +191,19 @@ namespace LearnSomething
                     else
                     {
                         wrongGuess++;
+                        Console.ForegroundColor = ConsoleColor.DarkRed;
                         Console.WriteLine("Tyvärr det var fel :( Gissa igen: ");
+                        Console.ResetColor(); 
                         userGuess = Convert.ToInt32(Console.ReadLine());
                     }
                     
                 }
                 catch (Exception)
                 {
+                    Console.ForegroundColor = ConsoleColor.DarkRed;
                     Console.WriteLine("Du kan bara använda siffror!");
                     Console.WriteLine("Försök igen: ");
+                    Console.ResetColor();
                 }
                
             }
