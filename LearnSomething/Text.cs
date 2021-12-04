@@ -8,10 +8,14 @@ namespace LearnSomething
         // static lista som går via klassen inte objektet
         private static List<Text> infoList = new List<Text>();
 
+        private static int wrongGuess = 0; 
+
         //Fields
         private int _num;
         private string _title;
         private string _info;
+
+
 
         // Konstruktorn som adderar alla objekt som skapas i listan. 
         public Text(int num, string title, string info)
@@ -91,6 +95,9 @@ namespace LearnSomething
 
         public static void PrintOptions()
         {
+            // Rubrik som står överst hela tiden. 
+            StartText.Text();
+
             // Styr PrintRandomTitle och PrintCorrectInfo
             Random rnd = new Random();
             int nr = rnd.Next(1, infoList.Count + 1);
@@ -182,8 +189,10 @@ namespace LearnSomething
                     }
                     else
                     {
+                        wrongGuess++;
                         Console.WriteLine("Tyvärr det var fel :( Gissa igen: ");
                         userGuess = Convert.ToInt32(Console.ReadLine());
+                        
                     }
                 }
                 catch (Exception)

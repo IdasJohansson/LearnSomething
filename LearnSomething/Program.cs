@@ -1,5 +1,5 @@
 ﻿using System;
-using System.IO; 
+using System.IO;
 
 namespace LearnSomething
 {
@@ -16,15 +16,15 @@ namespace LearnSomething
                 // Skapa en temporär array för att kunna dela upp textsträngen vid ;
                 string[] temp = item.Split(";");
                 // För att skapa objekt använder vi indexet i vår temporära array.
-                new Text(Convert.ToInt32(temp[0]), temp[1], temp[2]); 
+                new Text(Convert.ToInt32(temp[0]), temp[1], temp[2]);
             }
 
-           
+
             // Startar programmet
             Text.PrintOptions();
-            
-            
-            
+
+
+
 
 
         }
