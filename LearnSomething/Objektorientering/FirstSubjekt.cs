@@ -101,8 +101,8 @@ namespace LearnSomething
             int nr = rnd.Next(1, infoList.Count + 1);
 
             // Styr vilket case som ska visas i switch-satsen samt skickar vidare samma siffra till UserGuess
-            Random secondRnd = new Random();
-            int unKnown = secondRnd.Next(1, 4);
+            //Random secondRnd = new Random();
+            int unKnown = rnd.Next(1, 4);
 
 
             Console.Write("\nVad menas med: ");
