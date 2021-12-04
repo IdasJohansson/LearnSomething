@@ -153,6 +153,10 @@ namespace LearnSomething
         public static void UserGuess(int correctAnswer)
         {
             Console.WriteLine("\nVilket är det rätta alternativet?");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.WriteLine("(Välj 4 för att avsluta repetitionen och se antal felaktiga svar.)");
+            Console.WriteLine("(Välj 5 för att byta ämne.)");
+            Console.ResetColor();
 
             bool run = true;
 
@@ -173,7 +177,19 @@ namespace LearnSomething
                         Console.Clear();
                         PrintOptions();
                     }
-
+                    else if (userGuess == 4)
+                    {
+                        Console.WriteLine("Antal felaktiga svar: {0}", wrongGuess);
+                        Console.WriteLine("Tryck på valfri tanget för att avsluta programmet.");
+                        run = false;
+                        Console.ReadKey();
+                        Console.Clear();
+                    }
+                    else if (userGuess == 5)
+                    {
+                        Console.Clear();
+                        Menu.MenuMethod();
+                    }
                     else
                     {
                         wrongGuess++;
