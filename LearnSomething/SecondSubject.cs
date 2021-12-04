@@ -3,22 +3,18 @@ using System.Collections.Generic;
 
 namespace LearnSomething
 {
-    public class Text
+    public class SecondSubject
     {
-        // static lista som går via klassen inte objektet
-        private static List<Text> infoList = new List<Text>();
+        private static List<SecondSubject> infoList = new List<SecondSubject>();
 
-        private static int wrongGuess = 0; 
+        private static int wrongGuess = 0;
 
         //Fields
         private int _num;
         private string _title;
         private string _info;
 
-
-
-        // Konstruktorn som adderar alla objekt som skapas i listan. 
-        public Text(int num, string title, string info)
+        public SecondSubject(int num, string title, string info)
         {
             this._num = num;
             this._title = title;
@@ -26,17 +22,6 @@ namespace LearnSomething
             infoList.Add(this);
         }
 
-        // För att skriva ut samtliga objekt i arrayen om man vill se alla frågor och svar, använder ej bara för test. 
-        public static void Print()
-        {
-            foreach (var item in infoList)
-            {
-                Console.WriteLine("Nr: {0}. {1}", item._num, item._title);
-                Console.WriteLine("{0}", item._info);
-            }
-        }
-
-        // Detta är metoden för ämnet/frågan, count skickas med i PrintOptionsMetoden för att siffran ska vara samma som i PrintCorrectInfo
         public static void PrintRandomTitle(int count)
         {
             foreach (var item in infoList)
@@ -62,7 +47,6 @@ namespace LearnSomething
             }
         }
 
-        // Slumpar ett svar
         public static void PrintRandomInfo()
         {
             Random rnd = new Random();
@@ -187,19 +171,21 @@ namespace LearnSomething
                         Console.Clear();
                         PrintOptions();
                     }
+
                     else
                     {
                         wrongGuess++;
                         Console.WriteLine("Tyvärr det var fel :( Gissa igen: ");
                         userGuess = Convert.ToInt32(Console.ReadLine());
-                        
                     }
+
                 }
                 catch (Exception)
                 {
                     Console.WriteLine("Du kan bara använda siffror!");
                     Console.WriteLine("Försök igen: ");
                 }
+
             }
 
         }

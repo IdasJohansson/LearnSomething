@@ -1,0 +1,54 @@
+﻿1;Högnivåspråk;Berättar vad vi ska göra inte hur. Till detta används en kompilator som konverterar språket till lågnivå. 
+2;Lågnivåspråk;Handlar om hur en process går till. Det är en detaljerad kod som ligger nära det språk som datorn pratar
+3;Maskinkod;Ett språk som är binärt med ettor och nollor. Det är begränsat med instruktioner och hårt knutet till en processor. Datorn kan exekvera detta språk utan kompilering. 
+4;Källkod;Ett programspråk som är begripligt för människor, det som vi ser och förstår och som skrivs av en utvecklare. För att kunna exekveras behöver den översättas till maskinkod. 
+5;Skriptspråk ;Kräver inte kompilering utan måste tolkas i en speciell miljö. 
+6;Användargränssnitt;Syftar oftast på det grafiska, hur vi integrerar och styr. Det som en användare styr och interagerar med i ett program. Det är också alla verktyg som agerar som en länk mellan användare och dator alltså även tangetbort, mus och högtalare. 
+7;Frontend;Det visuella i ett program, det som visas upp för en användare tex knappar, bilder och formulär. 
+8;Backend;Den logiska delen i ett program, allt som sker i bakgrunden. 
+9;IDE - Integrated development enviorment;En utvecklingsmiljö där man skriver kod som underlättar att tolka och ta till sig koden. Den lämnar ofta kodförslag och varnar vid fel i koden. Består bland annat av en textredigerare debugger och en kompilator. 
+10;Kompilering;Ett program som omvandlar källkod till maskinkod. Alltså översätter utvecklarens programspråk till det språk som datorn förstår. 
+11;Exekvering;När koden körs. 
+12;Syntax;Är som regler för hur kod skrivs, vilken struktur den ska ha och kan jämföras med grammatik. Skiljer mellan olika språk.  
+13;Operator;Används för beräkningar, jämförelser och att tilldela värden. 
+14;Iteration;En upprepning av en process till dess att man når ett önskat resultat. 
+15;Index;En numerisk representation av ett objekts position i en samling. Börjar alltid på 0. 
+16;Pseudokod;Ett icke-programspråk med kommentarer eller instruktioner osm gör att vi förstår och beskriver en algoritm. Man kan använda det för att göra en skiss av ett program som ännu inte skrivits, det är också användbart i en kodkommentar för att enklare förklara vad ett kodstycke gör. 
+17;Nätverk;Enheter som på något sätt är sammankopplade och kan prata med varandra. 
+18;Server;Ett datorsystem som tillhandahåller filer, information, kommunikation och andra tjänster. 
+19;Klient;Ett datorsystem eller programvara som tar del av filer, information, kommunikation och andra tjänster som finns på en server.
+20;Klient-Server;En nätverksakitektur med en tydlig leverantör och en tydlig mottagare eller begärare. 
+21;Peer-to-peer;En nätverksakitektur som är icke hierarkiskt där alla parter är både leverantör och mottagare. 
+22;LAN;Används på en begränsad yta som ett kontor, byggnad eller privatbostad. Det finns två olika typer Ethernet och WLAN. 
+23;Ethernet;Ett trådbundet LAN, alltså local area network. 
+24;WLAN;Ett trådlöst LAN med en router som tar emot en WIFI signal. 
+25;WAN;Flera LAN som är sammankopplade med fjärrförbindelse.
+26;Switch;En hårdvara som inte har någon koppling till internet men som lokalt kan koppla samman enheter. Den håller koll på alla enheter med en MAC-adress. 
+27;Router;En hårvara genom vilken man kan koppla upp sin enhet och ansluta sig till internet via. 
+28;Brandvägg;En mjukvara som skyddar och blockerar mot oönskad eller farlig nätverkstrafik. 
+29;Protokoll;Hur kommunikation sker så att sändare och mottagare kan prata med varandra, och så att exempelvis överföring mellan datorer i ett nätverk kan ske. 
+30;HTTP;Ett protokoll som förklarar hur kommunikationen på en webbsida ska ske för att webbsidan ska presentera önskat resultat. 
+31;IP-adress;Identifierar en enhets koppling i nätverket. Det är enhetens logiska adress som finns i stunden och kan alltså förändras. 
+32;MAC-adress;Identifierar själva enheten och enhets fysiska adress. Den tilldelas till enheten av tillverkaren och ändras inte utan ser likadan ut. 
+33;Domännamn;En namngiven ip-adress. 
+34;DNS;Översätter domännamn till IP-adresser så att att en server kan läsa adressen. 
+35;Port;En adress till en specifik process, den talar om vart i datorn datan ska skickas. 
+36;Nod;En enhet i ett nätverk, en klient i nätverket såsom skrivare eller dator. 
+37;Versionshantering;Används för att kunna backa arbetet vid behov och utveckla nya saker utan att riskera att man förstör den nuvarande filen. Man kan också se hela händelseförloppet och vem som har gjort vad, när det har skett och varför. Detta arbetsätt gör det också möjligt att vara flera som arbetar i samma fil samtidigt. 
+38;Repo;Ett ställe där man samlar alla versioner av samma fil nör man jobbar enligt versionshantering. Det består av huvudfilen master och kopiorna med utvecklingar eller ändringar ligger i så kallade branches. Man kan också jobba med tags för att märka en version av koden, man taggar ofta vid en release av koden eller produkten för att kunna gå tillbaka och se hur koden såg ut i ett specifikt ögonblick. 
+39;Centraliserat VCS ;En programvara med en enkel struktur med ett repo och en server som utvecklaren tar ner till klienten. Man hämtar och laddar upp data. Man jobbar direkt mot servern och detta system används oftast när man bara är en utvecklare eftersom det är lite känsligare och finns större risk att saker går fel.  Man är också beroende av servern och att den alltid är uppkopplad. 
+40;Versionshanteringssystem;En programvara som används för att se och hantera ändringar i ett repo. 
+41;Distribuerat VCS;En programvara där servern tillhandahåller ett repro som utvecklaren klonar ner så att man får en lokal kopia. Ändringar ger nya versioner och kontakt med servern sker när man hämtar eller laddar upp data. Detta innebär också att projektet tar utrymme på datorn eftersom man laddar ner en lokal kopia av hela projektet. 
+42;Branch;En kopia av ett repo som man arbetar i när man utvecklar nya delar eller gör uppdateringar för att inte skada huvukoden och för att flera personer ska kunna rbeta med samma fil eller projekt samtidigt. 
+43;Faktorisering;Betyder omskrivning av kod. 
+44;SCRUM;Ett ramverk där man arbetar agilt som bygger på olika delmoment som kallas för sprintar. 
+45;Algoritm;En steg för steg beskrivning med instruktioner som är avsedda att utföra en uppgift eller lösa ett problem. 
+46;RAM;En tillfällig lagringsplats där allt minne vi använder just nu lagras, primärminne. 
+47;Hårddisk;En permanentlagringsplats. 
+48;CPU;En processor som utför instruktioner ungeför som en dators hjärna. 
+49;Operativsystem;Länken mellan datorns maskinvara och användaren. Det består av tre delar kärnan, användarprogram och systembibliotek.
+50;Vattenfallsmodellen;En utvecklingsprocess som är enkelriktad och går från steg till steg i ett flöde. Man löser problem i den fas man är i. 
+51;Agil;Detta arbetssätt är populärt inom systemutveckling och innebär att man arbetar i en iterativ, inkremenell och utforskande process. Det betyder att man jobbar med delleveranser i korta iterativa cykler för att kunna arbeta flexibelt. 
+52;Funktionella krav;De delar i ett system som ska kunna ske. 
+53;Icke funktionella krav;Syftar oftast på det grafiska, hur vi integrerar och styr. Det som en användare styr och interagerar med i ett program. Det är också alla verktyg som agerar som en länk mellan användare och dator alltså även tangetbort, mus och högtalare. 
+54;Kompilering;Att översätta källkod till maskinkod. 

@@ -1,0 +1,43 @@
+﻿1;UML - Unified modeling Language;Ett objektorienterat generellt språk för modellering av alla typer av system som används för att visualisera hur ett system ska utvecklas så att det är enkelt att förstå. 
+2;Variabel;"En plats där man lagrar ett värde av olika datatyp. Syntaxen för en variabel i C# är: datatyp variabelNamn = värde; "
+3;camelCase;Syntax för hur man namnger en variabel. 
+4;Datatyp;Det finns flera olika varianter man använder sig av inom programmering men de vanligaste är string, int, double, bool och char. 
+5;Integer;En datatyp som är ett heltal. Dessa kan vara både positiva och negativa. Det finns olika varianter av heltal som byte, short, int och long. Byte är låst till positiva tal. De olika varianterna tar också upp olika mycket minne. 
+6;Double ;En datatyp som är ett decimaltal. Det finns fler varianter som float och decimal där skillnaden är hur mycket minne de tar upp samt hur många decimaler de tar in. Float är det minst precisa och decimal det tyngsta. 
+7;String;En datayp där man lagrar textsträngar. 
+8;Char;En datatyp där man lagrar endast ett tecken, kan vara både bokstäver, siffror eller tecken. 
+9;Bool;En datatyp där man lagrar värdet sant eller falskt. 
+10;Array;En plats där man samlar flera element av varibler. Dessa måste vara av samma datatyp. Finns i flera varianter single, multi och jagged. Syntaxen är datatyp[] namnet = new datatyp[]
+11;List;En plats där man samlar flera element. Elementen måste vara av samma datatyp men det går även att lagra objekt. Då behöver inte datatypen på de olika delarna i objektet vara samma. 
+12;Klass;En mall som används för att skapa objekt. Innehåller variabler och eller metoder och kan återanvändas hur mpnga gånger som helst. 
+13;Konstruktor;Skapar objekt utifrån klassen. Det är en funktion som måste ha exakt samma namn som klassen och som anropas när vi skapar en instans av klassen. 
+14;Objekt;En instans som skapas av mallen från en klass. 
+15;Metod;En isolerad del av koden som kan återanvändas. Utför en uppgift, void, eller returnerar ett värde. Vill man returnera ett värde måste man ange vilkn datatyp man vill returnera. 
+16;PascalCase;Syntax för att skriva till exempel metodnamn där alla nya ord har stor bokstav. Ex MinMetod. 
+17;Strukturdiagram;Representerar programvarans eller ett systems statiska struktur och visar också olika nivåer av abstraktion och implementering. De används för att hjälpa dig visualisera de olika strukturerna i ett system, till exempel en databas eller en applikation. De visar hierarkin för komponenter eller moduler och hur de är kopplade till och interagerar med varandra. Det här verktygen ger vägledning för att se till att alla delar i ett system fungerar som avsett i förhållande till alla andra delar.
+18;Beteendediagram;Visar ett systems funktionalitet och framhäver vad som måste hända i systemet som modellerras. Det visar hur vi interagerar och hur saker sker. 
+19;Klassdiagram;Ett strukturdiagram där olika rutor representerar en klass. I rutan skriver man in namnet på klassen samt dess attribut och metoder vilket skapar en överblick för hur ett system är eller ska byggas upp.
+20;Objektdiagram ;Ett strukturdiagram där man utifrån ett klassdiagram fyller i värden för att se över att klassdiagrammet fungerar i praktiken. 
+21;Komponentdiagram;Ett strukturdiagram där man bryter ner komplexa system i mindre delar vilket är användbart vid till exempel databasmodellering. Det visar logiska grupperingar av element och deras realtioner vilket ger en förenklad vy över systemet. Varje del i systemet visas i en rektangulär ruta med namnet innuti. Kopplingarna definerar relationerna mellan systemets delar. 
+22;Aggregation;En association mellan olika objekt och är vad ett system består av. Även om man tar bort delar så kan varje del fungera var för sig. Ritar man upp det visas kopplinen med ett streck med en oifylld diamant. 
+23;Composition ;En association mellan olika objekt där delarna behöver ett ägande objekt förr att fungera. Ritar man upp det symboliseras kopplingen med en ifylld diamantsymbol.  
+24;Kompositdiagram;Liknar ett klassdiagram men går djupare och beskriver den interna strukturen i flera klasser och visar interaktionerna mellan dem. 
+25;Användarfall;Ett beteendediagram som beskriver vad ett system gör medn inte hur det gör det. En uppsättning händelser som inträffar när en aktör använder ett system för att slutföra en process. En aktör defineras som någon eller något som ineragerar med systemet från utsidan av systemet. Detta diagram beskriver alltså visuellt en uppsättning med sekvenser och representerar ett systems funktionskrav. 
+26;Aktivitetsdiagram;En visuell beskrivning av en algoritm, som ett flödeschema. En stegvis process med aktiviteter som måste inträffa för att ett mål ska uppnås. Det finns ett tydligt start och stopp och visar hur alla aktiviteter är kopplade till varandra. 
+27;Sekvensdiagram;Visar på interaktioner inom ett system baserat på användarfall. Det visar helt enkelt ett systems struktur med sekvenserna för meddelande och interaktioner mellan aktörer och objekt i kronologisk ordning. Det visar även enkel itteration och förgreningar och är användbart för att visa upp paralella processer. 
+28;Objektorientering;En programmeringsmetod baserad på en hieraki av klasser och objekt vilket utgör grunden när man utvecklar stora program eftersom dessa består av olika bygstenar objekt som tillsammans bygger upp programmet. 
+29;Abstraktion;Innebär att filtrera bort all information som är orelevant och att plocka ut det som är nödvändigt, den information som vi behöver nyttja i stunden. 
+30;Inkapsling;Innebär att skydda data och endast göra den synlig på olika nivåer genom så kallade access modifiers. För att få åtkomst till datan kan man gå via get och set. 
+31;Acces modifiers;Används för att begränsa tillgång till data och metoder.
+32;Public;Innebär att datan eller metoden är synligt i alla klasser, subklasser i andra projekt och i andra klasser. 
+33;Internal;En access modifier som innebär att datan eller metoden är synligt i klassen, i subklasser och i andra klasser men inte i andra projekt, 
+34;Protected;En access modifier som innebär att datan ör synlig i klassen och i subklasser men inte i andra projekt och inte i andra klasser. 
+35;Private;En access modifier som innebär att datan enbart är synlig i den egna klassen inte utanför. 
+36;Arv;En klass som bygger vidare på en annan klass. Hierarkin innebär att Subklasser kan nå en basklass men inte tvärtom. I en subklass kan man också addera attribut och metoder. 
+37;Polymorfism ;Att göra samma sak men på flera olika sätt. Tillexempel kam man nyttja samma metod men utföra den lite annorlunda. 
+38;Metadata;Betyder data om data och beskriver programmet. Data om data lagras i minnet. 
+39;Livscykel;Ett tidsspann från när ett objekt skapas till när det förstörs. 
+40;Override;Att srkiva över befintlig kod, tex skriva över en metod som är ärv från en basklass. Det går inte att srkiva över statiska metoder.  
+41;Abstrakt klass;Går ej att skapa objekt ifrån men det blir en mall som man kan skapa arv ifrån. Ifrån en ärvd klass går det att skapa objekt. 
+42;Abstrakt metod;En metod utan kodblock utan innehåll. Men det går att ha in och utdata. Eftersom man saknar kod måste metoden overridasm i alla subklasser vilket tvingar dem som skapar subklasser att bygga egna versioner av den metoden. 
+43;Interface;En slags mall för en klass där allt måste impelemteras och kan bara innehålla metoder. Det blir som en tvingande abstrakt klass. Kan till exempel användas för att bestämma vilka metoder en klass ska ha men inte vad de ska göra.  
