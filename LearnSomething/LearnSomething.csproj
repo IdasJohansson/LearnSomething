@@ -5,4 +5,12 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Objektorientering\" />
+    <None Remove="Systemutveckling\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Objektorientering\" />
+    <Folder Include="Systemutveckling\" />
+  </ItemGroup>
 </Project>
