@@ -165,7 +165,6 @@ namespace LearnSomething
                 try
                 {
                     int userGuess = Convert.ToInt32(Console.ReadLine());
-
                     if (userGuess == correctAnswer)
                     {
                         Console.ForegroundColor = ConsoleColor.DarkGreen;
@@ -196,9 +195,7 @@ namespace LearnSomething
                         Console.ForegroundColor = ConsoleColor.DarkRed; 
                         Console.WriteLine("Tyvärr det var fel :( Gissa igen: ");
                         Console.ResetColor();
-                        userGuess = Convert.ToInt32(Console.ReadLine());
                     }
-
                 }
                 catch (Exception)
                 {
