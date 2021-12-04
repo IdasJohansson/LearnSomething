@@ -211,9 +211,7 @@ namespace LearnSomething
                         Console.ForegroundColor = ConsoleColor.DarkRed;
                         Console.WriteLine("Tyvärr det var fel :( Gissa igen: ");
                         Console.ResetColor(); 
-                        userGuess = Convert.ToInt32(Console.ReadLine());
                     }
-                    
                 }
                 catch (Exception)
                 {
