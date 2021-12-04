@@ -168,7 +168,8 @@ namespace LearnSomething
         {
             Console.WriteLine("\nVilket är det rätta alternativet?");
             Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.WriteLine("(Välj 4 för att avsluta repetitionen och se antal felaktiga svar.)");
+            Console.WriteLine("(Välj 4 för att avsluta och se antal felaktiga svar.)");
+            Console.WriteLine("(Välj 5 för att byta ämne.)");
             Console.ResetColor();
 
 
