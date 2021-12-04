@@ -8,25 +8,25 @@ namespace LearnSomething
         {
             StartText.Text();
             Console.WriteLine("\nVad vill du repetera?");
-            Console.WriteLine("[1] Grundläggande begrepp Objektorientering");
-            Console.WriteLine("[2] Grundläggande begrepp Systemutveckling");
+            Console.WriteLine("Skriv [A] för Grundläggande begrepp Objektorientering");
+            Console.WriteLine("Skriv [B] för Grundläggande begrepp Systemutveckling");
  
             try
             {
-                int userChoice = Convert.ToInt32(Console.ReadLine());
+                char userChoice = Convert.ToChar(Console.ReadLine());
                 Console.Clear();
 
-                switch (userChoice)
+                switch (Char.ToUpper(userChoice))
                 {
-                    case 1:
+                    case 'A':
                         FirstSubjekt.PrintOptions();
                         break;
-                    case 2:
+                    case 'B':
                         SecondSubject.PrintOptions();
                         break;
                     default:
                         Console.ForegroundColor = ConsoleColor.DarkRed;
-                        Console.WriteLine("Felaktigt siffra, endast 1 och 2 är valbart tryck på en tanget och försök igen.");
+                        Console.WriteLine("Felaktigt tecken, endast bokstaven A och B är valbart, tryck på en tanget och försök igen.");
                         Console.ResetColor(); 
                         Console.ReadKey();
                         Console.Clear();

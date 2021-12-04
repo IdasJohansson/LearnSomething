@@ -187,7 +187,6 @@ namespace LearnSomething
                         Console.Clear();
                         PrintOptions();
                     }
-                   
                     else
                     {
                         wrongGuess++;
