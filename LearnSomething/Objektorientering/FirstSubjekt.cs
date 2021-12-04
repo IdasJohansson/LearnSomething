@@ -107,7 +107,7 @@ namespace LearnSomething
 
             Console.Write("\nVad menas med: ");
             PrintRandomTitle(nr);
-
+            
             // Tre switch-satser med Correct info på olika platser innebär att correct info hamnar på olika ställen varje gång.
             Console.WriteLine("\nAlternativ 1:");
             switch (unKnown)
@@ -167,6 +167,10 @@ namespace LearnSomething
         public static void UserGuess(int correctAnswer)
         {
             Console.WriteLine("\nVilket är det rätta alternativet?");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.WriteLine("(Välj 4 för att avsluta repetitionen och se antal felaktiga svar.)");
+            Console.ResetColor();
+
 
             bool run = true;
 
@@ -186,6 +190,19 @@ namespace LearnSomething
                         Console.ReadKey();
                         Console.Clear();
                         PrintOptions();
+                    }
+                    else if (userGuess == 4)
+                    {
+                        Console.WriteLine("Antal felaktiga svar: {0}", wrongGuess);
+                        Console.WriteLine("Tryck på valfri tanget för att avsluta programmet.");
+                        run = false;
+                        Console.ReadKey();
+                        Console.Clear();
+                    }
+                    else if (userGuess == 5)
+                    {
+                        Console.Clear(); 
+                        Menu.MenuMethod(); 
                     }
                     else
                     {
