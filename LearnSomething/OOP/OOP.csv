@@ -1,0 +1,43 @@
+﻿1;DateTime;En speciell typ av variabel som används för att göra tidsangivelser på olika sätt. 
+2;Random;Detta är en klass som kan generera slumpmässiga nummer inom ett angivet intervall. 
+3;Void;Innebär att ett metod inte returnera ett värde utan endast går något. 
+4;Static;Om man använder detta reserverade ordet innebär det att alla statiska medlemmar i klassen delar lika på klassens resurser. Gör man attribut och metoder såhär går de att använda utan att skapa eller gå via ett objekt.  
+5;Char.IsDigit();En metod som returnerar en bool och svarar på om ett tecken är siffra eller inte. 
+6;&&;Används för att kombinera flera villkor där alla villkor ska uppfyllas för att villkoret ska gälla. 
+7;||;Andvänds för att kombinera flera villkor, exempelvis det här villkoret gäller eller det här. 
+8;!=;Betyder inte lika med. 
+9;ToString();Metod som konverterar till en textsträng. 
+10;Enum;Ett sätt att lagra värden som man vet inte kommer att förändras och vill återanvända flera gånger i koden. 
+11;Dictionary;En funktion liknande ett lexikon där varje element har har en nyckel och ett värde. 
+12;Fields;Kallas variabler som deklareras direkt i en klass. 
+13;Properties;Är speciella metoder som gör det möjligt att komma åt värden som är lagrade i en skyddad variabel i en klass. Man kan både tilldela och hämta värden. 
+14;This;Ett ord som används för att peka på just det specifika objektet. 
+15;Linq - Language Integrated Query;Ett tilläggsbibliotek med metoder som framförallt används för att hantera listor eller andra datasamlingar och exempelvis sortera eller göra urval. 
+16;IO;Ett tilläggsbibliotek som används för att kunna arbeta med filer. 
+17;IEnumreble;Ett interface som används för att iterera element i en samling. 
+18;SQL;Ett standardiserat programspråk för att hämta och modifiera data i en relationsdatabas. 
+19;PadLeft();Adderar mellanslag eller ett angivet tecken i början på en textsträng. 
+20;Ternary;Ett mer komprimerat sätt att skriva en en enkel if-sats, man anger ett villkor och sen ett värde om villkoret är sant och ett villkor om värdet är falskt. 
+21;Interpolated string;Ett lättöverskådligt sätt att använda strängformatering, då inleder man meningen med ett dollartecken och infogar variabeln med värdet man har sparat direkt i meningen innanför ett brackets tillskillnad mot Composite där variablerna anges efteråt. 
+22;Composite formatting;Ett sätt att skriva textsträngar där man anger ett index för variblerna man vill använda i meningen och sedan skriver variablerna efter meningen. 
+23;To.Lower();Konverterar utvald bokstav eller ord till liten. 
+24;To.upper();Konverterat utvald bokstav eller ord till versaler. 
+25;Split() ;Delar upp delar i en textsträng i flera strängar och returnerar i en array. Innanför parantesen skriver man vart delningen ska ske tillexempel vid ett mellanslag eller ett semicolon. 
+26;API;En specifikation av hur olika applikationsprogram kan använda och kommunicera med en specifik programvara som därmed blir en mjukvarukomponent i applikationen. Ett gränssnitt mellan applikationen och biblioteket. 
+27;Modulus;Om man jämför två tal tas talet till höger bort så många gånger som är möjligt och returnerar sedan det värdet som är kvar. Användbart till exempel för att kontrollera om ett tal är udda eller jämnt. 
+28;Named parameters;Innbär att man kan ändra ordning på efterfrågade variabler när man skapar objekt. 
+29;Optional parameters;Innebär att man kan ange ett defaultvärde på en variabel som visas om man inte anger något annat. 
+30;ReadAllText;Används för att spara allt i en fil i en lång textsträng. 
+31;ReadAllLines;Används för att spara rad för rad i en fil i en array. 
+32;WriteAllText;Används för att skriva över text i en textfil, obs skriver över all text. 
+33;AppendAllText/AppendAllLines;Används för att lägga till text i en fil, text med för vanliga textsträngar och lines för rader från en array. Obs att detta lägger till text varje gång koden körs. 
+34;Contains();Används för att kontrollera om en textsträng innehåller en viss sak. 
+35;Substring();Används för att få ut en del av en textsträng. Kan användas med ett startvärde eller ett start och slutvärde enligt index. 
+36;Try catch;Används för att felhantera kod i det första kodblocket lägger man den koden som ska köras och i nästa kodblock vad som ska hända om något går fel. 
+37;Try Parse;Konverterar en inputsträng till en integer. 
+38;Exception;En basklass som används för att hantera vad som händer när något går fel i en try catch. 
+39;IsNullOrEmpty();Returnerar en boolean som anger om en textsträng är tom eller null. Null innebär att textsträngen ännu inte har tilldelats ett värde, alternativt blivit tilldelad värdet null. 
+40;ToCharArray();Konverterar hela, eller delar av en textsträng till en array av characters. Kan ta in två integers där den första är startindex och den andra är antal tecken. 
+41;JsonData;Ett textbaserat kompakt dataformat som används för att lagra transportera och utbyta data. 
+42;Api;Ett slags protokoll som används för att program, system och applikationer ska kunna prata med varandra. 
+43;Asynkron;Innebär att något sker medans resten fortgår. 

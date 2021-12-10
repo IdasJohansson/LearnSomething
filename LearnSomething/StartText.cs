@@ -1,4 +1,6 @@
 ﻿using System;
+using LearnSomething.OOP;
+
 namespace LearnSomething
 {
     public class StartText

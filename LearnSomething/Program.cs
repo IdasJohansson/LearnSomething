@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using LearnSomething.OOP; 
 
 namespace LearnSomething
 {
@@ -26,8 +27,18 @@ namespace LearnSomething
             {
                 string[] temp = item.Split(";");
 
-                new SecondSubject(Convert.ToInt32(temp[0]), temp[1], temp[2]); 
+                new SecondSubject(Convert.ToInt32(temp[0]), temp[1], temp[2]);
             }
+
+            string[] textfile3 = File.ReadAllLines(@"/Users/ida/Projects/LearnSomething/LearnSomething/OOP/OOP.csv");
+
+            foreach (var item in textfile3)
+            {
+                string[] temp = item.Split(";");
+
+                new ThirdSubject(Convert.ToInt32(temp[0]), temp[1], temp[2]);
+            }
+            
 
             // Öppnar menyn. 
             Menu.MenuMethod(); 

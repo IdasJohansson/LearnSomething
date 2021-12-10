@@ -9,7 +9,7 @@
 9;Bool;En datatyp där man lagrar värdet sant eller falskt. 
 10;Array;En plats där man samlar flera element av varibler. Dessa måste vara av samma datatyp. Finns i flera varianter single, multi och jagged. Syntaxen är datatyp[] namnet = new datatyp[]
 11;List;En plats där man samlar flera element. Elementen måste vara av samma datatyp men det går även att lagra objekt. Då behöver inte datatypen på de olika delarna i objektet vara samma. 
-12;Klass;En mall som används för att skapa objekt. Innehåller variabler och eller metoder och kan återanvändas hur mpnga gånger som helst. 
+12;Klass;En mall som används för att skapa objekt. Innehåller variabler och eller metoder och kan återanvändas hur många gånger som helst. 
 13;Konstruktor;Skapar objekt utifrån klassen. Det är en funktion som måste ha exakt samma namn som klassen och som anropas när vi skapar en instans av klassen. 
 14;Objekt;En instans som skapas av mallen från en klass. 
 15;Metod;En isolerad del av koden som kan återanvändas. Utför en uppgift, void, eller returnerar ett värde. Vill man returnera ett värde måste man ange vilkn datatyp man vill returnera. 
@@ -39,5 +39,5 @@
 39;Livscykel;Ett tidsspann från när ett objekt skapas till när det förstörs. 
 40;Override;Att srkiva över befintlig kod, tex skriva över en metod som är ärv från en basklass. Det går inte att srkiva över statiska metoder.  
 41;Abstrakt klass;Går ej att skapa objekt ifrån men det blir en mall som man kan skapa arv ifrån. Ifrån en ärvd klass går det att skapa objekt. 
-42;Abstrakt metod;En metod utan kodblock utan innehåll. Men det går att ha in och utdata. Eftersom man saknar kod måste metoden overridasm i alla subklasser vilket tvingar dem som skapar subklasser att bygga egna versioner av den metoden. 
+42;Abstrakt metod;En metod utan kodblock utan innehåll. Men det går att ha in och utdata. Eftersom man saknar kod måste metoden overrideas i alla subklasser vilket tvingar dem som skapar subklasser att bygga egna versioner av den metoden. 
 43;Interface;En slags mall för en klass där allt måste impelemteras och kan bara innehålla metoder. Det blir som en tvingande abstrakt klass. Kan till exempel användas för att bestämma vilka metoder en klass ska ha men inte vad de ska göra.  
