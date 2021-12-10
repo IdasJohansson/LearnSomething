@@ -34,10 +34,11 @@
 34;Contains();Används för att kontrollera om en textsträng innehåller en viss sak. 
 35;Substring();Används för att få ut en del av en textsträng. Kan användas med ett startvärde eller ett start och slutvärde enligt index. 
 36;Try catch;Används för att felhantera kod i det första kodblocket lägger man den koden som ska köras och i nästa kodblock vad som ska hända om något går fel. 
-37;Try Parse;Konverterar en inputsträng till en integer. 
+37;Parse;Konverterar en inputsträng till en integer. 
 38;Exception;En basklass som används för att hantera vad som händer när något går fel i en try catch. 
 39;IsNullOrEmpty();Returnerar en boolean som anger om en textsträng är tom eller null. Null innebär att textsträngen ännu inte har tilldelats ett värde, alternativt blivit tilldelad värdet null. 
 40;ToCharArray();Konverterar hela, eller delar av en textsträng till en array av characters. Kan ta in två integers där den första är startindex och den andra är antal tecken. 
 41;JsonData;Ett textbaserat kompakt dataformat som används för att lagra transportera och utbyta data. 
 42;Api;Ett slags protokoll som används för att program, system och applikationer ska kunna prata med varandra. 
-43;Asynkron;Innebär att något sker medans resten fortgår. 
+43;Asynkron;Innebär att något sker medans resten fortgår.
+44;Switch;Fungerar ungefär som en if-sats men är inte lika lämplig att använda vid kombinerade villkor. Blir lite mindre och tydligare kod än if/else. 
